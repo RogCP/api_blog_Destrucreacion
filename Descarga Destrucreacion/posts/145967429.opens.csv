@@ -1,0 +1,4 @@
+post_id,timestamp,email,post_type,post_audience,active_subscription,country,city,region,device_type,client_os,client_type,user_agent
+145967429,2024-06-27T02:01:56.641Z,roger@destrucreacion.com,newsletter,everyone,false,MX,,,,,,Mozilla/5.0
+145967429,2024-06-28T16:58:31.207Z,roger@destrucreacion.com,newsletter,everyone,false,MX,,,,,,Mozilla/5.0
+145967429,2024-07-04T22:07:08.480Z,roger@destrucreacion.com,newsletter,everyone,false,MX,,,,,,Mozilla/5.0

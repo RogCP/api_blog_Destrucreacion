@@ -1,0 +1,4 @@
+post_id,timestamp,email,post_type,post_audience,active_subscription,country,city,region,device_type,client_os,client_type,user_agent
+150303246,2024-10-18T17:08:58.432Z,fatusred@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+150303246,2024-10-18T18:26:01.382Z,sami_samu33@hotmail.com,newsletter,everyone,true,MX,,,,,,Outlook-Android/2.0
+150303246,2024-10-18T19:13:59.416Z,fatusred@gmail.com,newsletter,everyone,true,US,,,,,,Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)

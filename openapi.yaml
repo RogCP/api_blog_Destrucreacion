@@ -1,0 +1,81 @@
+openapi: 3.0.0
+info:
+  title: API Personalizada del Blog
+  version: '1.0'
+servers:
+  - url: 'http://127.0.0.1:5000'  # Cambia esta URL si alojas la API en un servidor público
+paths:
+  /posts:
+    get:
+      summary: Obtener las publicaciones más recientes
+      responses:
+        '200':
+          description: Lista de publicaciones
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Post'
+        '500':
+          description: Error del servidor
+  /all_posts:
+    get:
+      summary: Obtener todas las publicaciones
+      responses:
+        '200':
+          description: Lista completa de publicaciones
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Post'
+        '500':
+          description: Error del servidor
+  /posts/{post_id}:
+    get:
+      summary: Obtener una publicación por su ID
+      parameters:
+        - in: path
+          name: post_id
+          required: true
+          schema:
+            type: string
+          description: ID único de la publicación (guid)
+      responses:
+        '200':
+          description: Publicación encontrada
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Post'
+        '404':
+          description: Publicación no encontrada
+        '500':
+          description: Error del servidor
+components:
+  schemas:
+    Post:
+      type: object
+      properties:
+        guid:
+          type: string
+        title:
+          type: string
+        pubDate:
+          type: string
+        link:
+          type: string
+        author:
+          type: string
+        thumbnail:
+          type: string
+        description:
+          type: string
+        content:
+          type: string
+        categories:
+          type: array
+          items:
+            type: string
