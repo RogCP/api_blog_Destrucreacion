@@ -3,7 +3,8 @@ info:
   title: API Personalizada del Blog
   version: '1.0'
 servers:
-  - url: 'http://127.0.0.1:5000'  # Cambia esta URL si alojas la API en un servidor público
+  - servers:
+  - url: 'https://api-blog-destrucreacion.onrender.com'  # Cambia esta URL si alojas la API en un servidor público
 paths:
   /posts:
     get:
